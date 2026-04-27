@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Campus Connect
+            </a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">Annual College Fest</p>
+                <h1>Campus Connect 2026</h1>
+                <p class="hero-text">
+                    A student-led celebration of technology, culture, sports, and creativity.
+                </p>
+                <div class="hero-actions">
+                    <a href="#register" class="btn primary-btn">Register Now</a>
+                    <a href="#events" class="btn secondary-btn">Explore Events</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <div class="countdown-box">
+                <p>Event starts in</p>
+                <div class="countdown" id="countdown">
+                    <span><strong id="days">00</strong>Days</span>
+                    <span><strong id="hours">00</strong>Hours</span>
+                    <span><strong id="minutes">00</strong>Minutes</span>
+                    <span><strong id="seconds">00</strong>Seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-title">
+                <p>About The Fest</p>
+                <h2>Where college energy meets new ideas</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Campus Connect brings students from different departments together for
+                        competitions, workshops, performances, and networking. The website helps
+                        visitors view events, check the schedule, and register online.
+                    </p>
+                    <div class="stats">
+                        <div>
+                            <strong>25+</strong>
+                            <span>Events</span>
+                        </div>
+                        <div>
+                            <strong>3</strong>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <strong>1000+</strong>
+                            <span>Students</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80" alt="Students on a college campus">
+            </div>
+        </section>
+
+        <section class="section event-section" id="events">
+            <div class="section-title">
+                <p>Event Categories</p>
+                <h2>Choose your favorite event</h2>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="tech">Tech</button>
+                <button class="filter-btn" data-category="culture">Culture</button>
+                <button class="filter-btn" data-category="sports">Sports</button>
+            </div>
+
+            <div class="event-grid">
+                <article class="event-card" data-category="tech">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Hackathon</h3>
+                    <p>Build a working solution with your team in 24 hours.</p>
+                </article>
+                <article class="event-card" data-category="tech">
+                    <i class="fa-solid fa-robot"></i>
+                    <h3>Robo Race</h3>
+                    <p>Design and race robots through a challenging track.</p>
+                </article>
+                <article class="event-card" data-category="culture">
+                    <i class="fa-solid fa-music"></i>
+                    <h3>Battle of Bands</h3>
+                    <p>Live music performances from college bands.</p>
+                </article>
+                <article class="event-card" data-category="culture">
+                    <i class="fa-solid fa-masks-theater"></i>
+                    <h3>Drama Night</h3>
+                    <p>Short plays, skits, and stage performances.</p>
+                </article>
+                <article class="event-card" data-category="sports">
+                    <i class="fa-solid fa-futbol"></i>
+                    <h3>Football League</h3>
+                    <p>Department teams compete for the campus trophy.</p>
+                </article>
+                <article class="event-card" data-category="sports">
+                    <i class="fa-solid fa-person-running"></i>
+                    <h3>Athletics Meet</h3>
+                    <p>Track events for speed, strength, and stamina.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="schedule">
+            <div class="section-title">
+                <p>Program Plan</p>
+                <h2>Three day schedule</h2>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-day="day1">Day 1</button>
+                <button class="tab-btn" data-day="day2">Day 2</button>
+                <button class="tab-btn" data-day="day3">Day 3</button>
+            </div>
+
+            <div class="schedule-list active" id="day1">
+                <div class="schedule-item">
+                    <span>09:30 AM</span>
+                    <p>Opening Ceremony</p>
+                </div>
+                <div class="schedule-item">
+                    <span>11:00 AM</span>
+                    <p>Technical Quiz</p>
+                </div>
+                <div class="schedule-item">
+                    <span>02:00 PM</span>
+                    <p>Hackathon Begins</p>
+                </div>
+            </div>
+
+            <div class="schedule-list" id="day2">
+                <div class="schedule-item">
+                    <span>10:00 AM</span>
+                    <p>Robo Race</p>
+                </div>
+                <div class="schedule-item">
+                    <span>01:00 PM</span>
+                    <p>Drama Night</p>
+                </div>
+                <div class="schedule-item">
+                    <span>04:00 PM</span>
+                    <p>Football Finals</p>
+                </div>
+            </div>
+
+            <div class="schedule-list" id="day3">
+                <div class="schedule-item">
+                    <span>09:00 AM</span>
+                    <p>Athletics Meet</p>
+                </div>
+                <div class="schedule-item">
+                    <span>03:00 PM</span>
+                    <p>Battle of Bands</p>
+                </div>
+                <div class="schedule-item">
+                    <span>06:00 PM</span>
+                    <p>Prize Distribution</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section register-section" id="register">
+            <div class="section-title">
+                <p>Join The Fest</p>
+                <h2>Student registration</h2>
+            </div>
+
+            <form class="register-form" id="registerForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department">
+                            <option value="">Select department</option>
+                            <option>Computer Science</option>
+                            <option>Electronics</option>
+                            <option>Mechanical</option>
+                            <option>Civil</option>
+                            <option>Management</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="event">Event</label>
+                        <select id="event">
+                            <option value="">Select event</option>
+                            <option>Hackathon</option>
+                            <option>Robo Race</option>
+                            <option>Battle of Bands</option>
+                            <option>Football League</option>
+                            <option>Athletics Meet</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn primary-btn">Submit Registration</button>
+                <p class="form-message" id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made for Internship Final Project | Campus Connect 2026</p>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
